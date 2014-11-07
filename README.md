@@ -39,8 +39,8 @@ with numerous additional packages.
 
 ### Usage
 
-Have your IPython notebooks in the directory `$(HOME)/notebooks` (start with empty directory), then
+Have your IPython notebooks in the directory `$HOME/notebooks` (start with empty directory), then
 
-    docker run -d -p 8889:8888 -v $(HOME)/notebooks:/notebooks -e "PASSWORD=ipython" fhwedel/ipython-notebook-python3
+    docker run -d -p 8889:8888 -v $HOME/notebooks:/notebooks -e "PASSWORD=ipython" fhwedel/ipython-notebook-python3
 
 Point your browser to https://localhost:8889, login with password *ipython* (as specified above).
