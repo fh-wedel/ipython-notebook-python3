@@ -26,6 +26,9 @@ RUN dpkg-reconfigure locales
 RUN apt-get -qq install build-essential make gcc zlib1g-dev git python3 python3-dev python3-pip
 RUN apt-get -qq install libzmq3-dev sqlite3 libsqlite3-dev pandoc libcurl4-openssl-dev nodejs
 
+# Upgrade pip3 itself
+RUN pip3 install --upgrade pip
+
 # ipython notebook
 RUN pip3 install ipython[notebook]
 
